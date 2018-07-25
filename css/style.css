@@ -112,16 +112,18 @@ header {
 }
 
 .navigation > ul.nav-menu > li {
-  float: bottom;
   display:inline;
-  padding: 7px;
+  padding: 10px;
   list-style-type: none;
 }
 
 .navigation > ul.nav-menu > li > a {
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
   color: #000000;
+  min-width: 60px;
 }
 
 .navigation > ul.nav-menu > li > a.active {
