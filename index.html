@@ -10,33 +10,9 @@
 <body>
 <div class="wrapper">
   <header class="header">
-    <div class="logo">
-      <img class="logo" src="images/logo-net-blog.png">
-    </div>
-    <div class="side-nav">
-      <div class="social-icons">
-        <div class="icons-list">
-          <a href="#">
-            <img src="images/facebook.svg" alt="Facebook">
-          </a>
-          <a href="#">
-            <img src="images/twitter.svg" alt="Twitter">
-          </a>
-          <a href="#">
-            <img src="images/linkedin.svg" alt="Linkedin">
-          </a>
-          <a href="#">
-            <img src="images/e-mail.svg" alt="E-mail">
-          </a>
-          <a href="#">
-            <img src="images/skype.svg" alt="Skype">
-          </a>
-          <a href="#" class="search-icon">
-            <img src="images/search-icon.png" alt="Search">
-          </a>
-        </div>
-      </div>
-      <nav class="navigation mobile-hide">
+    <div class="toggle-menu mobile-show" id="toggle-menu">
+      <input class="toggle-menu-mobile" type="checkbox" id="toggle-checkbox"/>
+      <nav class="mobile-navigation mobile-show">
         <ul class="nav-menu">
           <li>
             <a class="active" href="#">Home</a>
@@ -52,7 +28,36 @@
           </li>
         </ul>
       </nav>
-      <nav class="navigation mobile-show">
+    </div>
+    <div class="logo">
+      <img class="logo" src="images/logo-net-blog.png">
+    </div>
+    <div class="side-nav">
+      <div class="social-icons">
+        <div class="icons-list">
+          <span class="mobile-hide">
+            <a href="#">
+              <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="#">
+              <img src="images/twitter.svg" alt="Twitter">
+            </a>
+            <a href="#">
+              <img src="images/linkedin.svg" alt="Linkedin">
+            </a>
+            <a href="#">
+              <img src="images/e-mail.svg" alt="E-mail">
+            </a>
+            <a href="#">
+              <img src="images/skype.svg" alt="Skype">
+            </a>
+          </span>
+          <a href="#" class="search-icon">
+            <img src="images/search-icon.png" alt="Search">
+          </a>
+        </div>
+      </div>
+      <nav class="navigation mobile-hide">
         <ul class="nav-menu">
           <li>
             <a class="active" href="#">Home</a>
@@ -228,9 +233,6 @@
         </div>
       </div>
     </div>
-
-
-
   </main>
   <aside class="aside aside-1">
     <div class="profile">

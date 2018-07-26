@@ -15,7 +15,7 @@
 }
 
 .header {
-  background: tomato;
+  background: #ffffff;
 }
 
 .footer {
@@ -69,7 +69,6 @@ header {
   }
 }
 
-
 .side-nav {
   display: flex;
   flex-direction: column;
@@ -79,6 +78,59 @@ header {
 .side-nav > .navigation > .nav-menu {
   margin-top: 22px;
   margin-bottom: 5px;
+}
+
+.toggle-menu > input.toggle-menu-mobile {
+  height: 32px;
+  width: 32px;
+}
+
+.toggle-menu > input[type=checkbox]:before {
+  content:"";
+  display:inline-block;
+  width:32px;
+  height:32px;
+  background: url("../images/hamburger-menu-icon.jpg") no-repeat center;
+}
+
+#toggle-menu > input:checked ~ .mobile-navigation {
+  transform: none;
+}
+
+.toggle-menu > input[type=checkbox]:checked:before {
+  background: url("../images/close-icon.jpg") no-repeat center;
+}
+
+.mobile-navigation {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  transform-origin: 0;
+  transform: translate(-100%, 0);
+  transition: transform 0.3s cubic-bezier(0.78,0.3,0.03,1.0);
+}
+
+.mobile-navigation > ul.nav-menu {
+  text-align: left;
+  background-color: #2CB7C6;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  width: 230px;
+}
+
+.mobile-navigation > ul.nav-menu > li {
+  padding: 15px 40px;
+}
+
+.mobile-navigation > ul.nav-menu > li:hover {
+  background-color: #34e3f2;
+  cursor: pointer;
+}
+
+.mobile-navigation > ul.nav-menu > li > a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .social-icons > .icons-list {
@@ -102,13 +154,26 @@ header {
 }
 
 @media all and (max-width: 992px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
   .navigation.mobile-hide {
+    display: none;
+  }
+
+  .icons-list > .mobile-hide {
     display: none;
   }
 }
 
 @media all and (min-width: 992px) {
-  .navigation.mobile-show {
+  .mobile-navigation.mobile-show {
+    display: none;
+  }
+
+  .toggle-menu.mobile-show {
     display: none;
   }
 }
