@@ -42,15 +42,10 @@
   .footer  { order: 4; }
 }
 
-@media all and (max-width: 800px) {
-  .aside-1 { order: 2; }
-  .main    { flex: 3 0; }
-  .main    { order: 3; }
-  .footer  { order: 4; }
-}
-
 body {
   padding: 2em;
+  font-family: 'Lato', sans-serif;
+  font-weight: normal;
 }
 
 /*Header*/
@@ -133,4 +128,112 @@ header {
 .navigation > ul.nav-menu > li > a:hover {
   color: #656565;
 }
+
+/*Aside*/
+.aside {
+  padding: 30px;
+  max-width: 330px;
+}
+
+.profile > .avatar > img {
+  width: 135px;
+  border-radius: 50%;
+}
+
+.profile > .social-icons > .icons-list {
+  text-align: center;
+}
+
+.subscribe {
+  margin-top: 30px;
+}
+
+.subscribe > .subscribe-form {
+  text-align: left;
+}
+
+.subscribe > .subscribe-form > input.input {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.subscribe > .subscribe-form > input.submit-btn {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.search {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.search > .search-form > input.input {
+  width: calc(100% - 42px);
+}
+
+.search > .search-form > a.search-icon > img {
+  height: 32px;
+  width: 32px;
+  margin-bottom: -10px;
+}
+
+.tags-form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 120px;
+  overflow: hidden;
+}
+
+.tags-form > .tags-list > .tag {
+  float: left;
+  font-size: 14px;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ACFF2F;
+}
+
+.tags-form > .tags-list > .tag:hover {
+  background-color: #a1ec2c;
+  cursor: pointer;
+}
+
+.last-comments-form {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.last-comments-form > .comment-block {
+  padding: 10px;
+  display: flex;
+  align-content: space-between;
+}
+
+.last-comments-form > .comment-block > .avatar > img {
+  width: 70px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment-block > .comment > .first-name > h4 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 17px;
+}
+
+.comment-block > .comment > .comment-text {
+  max-height: 150px;
+  overflow: hidden;
+}
+
+.comment-block > .comment > .comment-text > p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+
 
