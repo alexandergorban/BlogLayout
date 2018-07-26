@@ -101,6 +101,18 @@ header {
   width: 32px;
 }
 
+@media all and (max-width: 992px) {
+  .navigation.mobile-hide {
+    display: none;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .navigation.mobile-show {
+    display: none;
+  }
+}
+
 .navigation > ul.nav-menu {
   display: block;
   list-style-type: none;
@@ -235,5 +247,75 @@ header {
   font-weight: normal;
 }
 
+/*Main*/
+.posts-list {
+  display: grid;
+  grid-gap: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 300px);
+}
 
+.posts-list > .post {
+  width: 300px;
+  box-shadow: 0 0 3px 1px #dddddd;
+}
 
+.post > .post-top {
+  height: 165px;
+}
+
+.post .post-img {
+  display: block;
+  margin: 10px;
+  width: calc(100% - 20px);
+  cursor: pointer;
+}
+
+.post .post-detail {
+  padding: 10px;
+}
+
+.post .post-title {
+  font-size: 18px;
+  font-weight: normal;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.post .post-short-text {
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+.post .post-author h4 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.post .post-bottom {
+  padding-top: 10px;
+  border-top: solid 1px #000000;
+}
+
+.post-icons > .post-icon {
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+.post-icons img.post-icon {
+  height: 25px;
+  width: 25px;
+  margin-right: 7px;
+  cursor: pointer;
+}
+
+.post .post-icon > span {
+  font-size: 18px;
+}
+
+.post:hover .post-img {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}

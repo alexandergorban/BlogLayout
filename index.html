@@ -36,7 +36,23 @@
           </a>
         </div>
       </div>
-      <nav class="navigation">
+      <nav class="navigation mobile-hide">
+        <ul class="nav-menu">
+          <li>
+            <a class="active" href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Contacts</a>
+          </li>
+          <li>
+            <a href="#">Sign in</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="navigation mobile-show">
         <ul class="nav-menu">
           <li>
             <a class="active" href="#">Home</a>
@@ -55,7 +71,166 @@
     </div>
   </header>
   <main class="main">
-    Main
+    <div class="posts-list">
+      <div class="post">
+        <div class="post-top">
+          <img class="post-img" src="images/blog-img-1.jpg" alt="ASP.NET & Linux">
+        </div>
+        <div class="post-detail">
+          <h3 class="post-title">
+            Profiling a .NET Core Application on Linux
+          </h3>
+          <div class="post-author">
+            <h4>Sasha Goldshtein</h4>
+          </div>
+          <div class="post-short-text">
+            In the same vein of my previous post on analyzing core dumps of .NET Core applications on Linux, let’s take a look at what it takes to do some basic performance profiling.
+          </div>
+          <div class="post-bottom">
+            <span class="post-time">
+              19/07/2018
+            </span>
+            <div class="post-icons">
+              <span class="post-icon">
+                <img class="post-icon" src="images/icon-comments.svg" alt="comments">
+                <span>2</span>
+              </span>
+              <span class="post-icon">
+                <img class="post-icon" src="images/icon-like.svg" alt="likes">
+                <span>5</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-top">
+          <img class="post-img" src="images/blog-img-6.png" alt="ASP.NET & Linux">
+        </div>
+        <div class="post-detail">
+          <h3 class="post-title">
+            Dynamic Tracing of .NET Core Methods
+          </h3>
+          <div class="post-author">
+            <h4>Sasha Goldshtein</h4>
+          </div>
+          <div class="post-short-text">
+            Dynamic tracing is one of the Linux diagnostics superpowers. By adding dynamic tracepoints on arbitrary functions across the system.
+          </div>
+          <div class="post-bottom">
+            <span class="post-time">
+              19/07/2018
+            </span>
+            <div class="post-icons">
+              <span class="post-icon">
+                <img class="post-icon" src="images/icon-comments.svg" alt="comments">
+                <span>2</span>
+              </span>
+              <span class="post-icon">
+                <img class="post-icon" src="images/icon-like.svg" alt="likes">
+                <span>5</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-top">
+          <img class="post-img" src="images/blog-img-3.png" alt="ASP.NET & Linux">
+        </div>
+        <div class="post-detail">
+          <h3 class="post-title">
+            Getting Stacks for LTTng Events with .NET Core on Linux
+          </h3>
+          <div class="post-author">
+            <h4>Sasha Goldshtein</h4>
+          </div>
+          <div class="post-short-text">
+            On Windows, .NET contains numerous very useful ETW events, which can be used for tracing garbage collections, assembly loading, exceptions thrown, object allocations, and other interesting scenarios.
+          </div>
+          <div class="post-bottom">
+            <span class="post-time">
+              19/07/2018
+            </span>
+            <div class="post-icons">
+              <span class="post-icon">
+                <img class="post-icon" src="images/icon-comments.svg" alt="comments">
+                <span>2</span>
+              </span>
+              <span class="post-icon">
+                <img class="post-icon" src="images/icon-like.svg" alt="likes">
+                <span>5</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-top">
+          <img class="post-img" src="images/blog-img-4.png" alt="ASP.NET & Linux">
+        </div>
+        <div class="post-detail">
+          <h3 class="post-title">
+            Windows Process Memory Usage Demystified
+          </h3>
+          <div class="post-author">
+            <h4>Jon Skeet</h4>
+          </div>
+          <div class="post-short-text">
+            You might expect that as joining is such a fundamental concept in SQL, it would be a complex operation to both describe and implement in LINQ.
+          </div>
+          <div class="post-bottom">
+            <span class="post-time">
+              19/07/2018
+            </span>
+            <div class="post-icons">
+              <span class="post-icon">
+                <img class="post-icon" src="images/icon-comments.svg" alt="comments">
+                <span>2</span>
+              </span>
+              <span class="post-icon">
+                <img class="post-icon" src="images/icon-like.svg" alt="likes">
+                <span>5</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="post">
+        <div class="post-top">
+          <img class="post-img" src="images/blog-img-5.png" alt="ASP.NET & Linux">
+        </div>
+        <div class="post-detail">
+          <h3 class="post-title">
+            Shared Memory Queue, Adaptive pthread_mutex, and Dynamic Tracing
+          </h3>
+          <div class="post-author">
+            <h4>Jon Skeet</h4>
+          </div>
+          <div class="post-short-text">
+            This blog post is effectively a log of my experience with the preview of the C# 8 nullable reference types feature.
+          </div>
+          <div class="post-bottom">
+            <span class="post-time">
+              19/07/2018
+            </span>
+            <div class="post-icons">
+              <span class="post-icon">
+                <img class="post-icon" src="images/icon-comments.svg" alt="comments">
+                <span>2</span>
+              </span>
+              <span class="post-icon">
+                <img class="post-icon" src="images/icon-like.svg" alt="likes">
+                <span>5</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
   </main>
   <aside class="aside aside-1">
     <div class="profile">
@@ -180,7 +355,7 @@
     </div>
   </aside>
   <footer class="footer">
-    Footer
+    ©2018 .NET BLOG - All rights reserved
   </footer>
 </div>
 </body>
