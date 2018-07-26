@@ -348,6 +348,10 @@ header {
   box-shadow: 0 0 3px 1px #259cac;
 }
 
+.posts-list > .post:hover {
+  box-shadow: 0 0 4px 2px #26aaba;
+}
+
 .post > .post-top {
   height: 165px;
 }
