@@ -76,6 +76,10 @@ header {
   margin-bottom: 20px;
 }
 
+.logo > img.logo {
+  cursor: pointer;
+}
+
 @media all and (min-width: 992px) {
   .logo > img.logo {
     min-height: 100px;
